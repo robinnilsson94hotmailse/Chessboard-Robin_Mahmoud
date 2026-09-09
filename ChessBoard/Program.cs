@@ -24,13 +24,16 @@ for (int row = 0; row < boardSize; row++)
     {
         if ((row + column) % 2 == 0)
         {
-            Console.Write(". ");
+            Console.BackgroundColor = ConsoleColor.Black;
         }
         else
         {
-            Console.Write("# ");
+            Console.BackgroundColor = ConsoleColor.White;
         }
+        Console.Write("  ");    
     }
 
     Console.WriteLine();
+    Console.ResetColor();
 }
+
