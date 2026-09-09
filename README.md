@@ -1,2 +1,2 @@
 # Chessboard-Robin_Mahmoud
-Schackbräde 
+C# console application that renders a chessboard.
