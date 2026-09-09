@@ -16,3 +16,21 @@ while (true)
 }
 
 Console.WriteLine($"Board size: {boardSize} x {boardSize}");
+Console.WriteLine();
+
+for (int row = 0; row < boardSize; row++)
+{
+    for (int column = 0; column < boardSize; column++)
+    {
+        if ((row + column) % 2 == 0)
+        {
+            Console.Write(". ");
+        }
+        else
+        {
+            Console.Write("# ");
+        }
+    }
+
+    Console.WriteLine();
+}
