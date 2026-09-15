@@ -1,4 +1,9 @@
-﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
+﻿using Spectre.Console;
+
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+AnsiConsole.MarkupLine("[bold blue]ChessBoard Generator[/]");
+
 int boardSize;
 
 while (true)
@@ -13,13 +18,14 @@ while (true)
         break;
     }
 
-    Console.WriteLine("Invalid input. Please enter a number from 3 to 50.");
+    AnsiConsole.MarkupLine(
+        "[bold red]Invalid input. Please enter a number from 3 to 50.[/]");
 }
 
-Console.WriteLine($"Board size: {boardSize} x {boardSize}");
+AnsiConsole.MarkupLine(
+    $"[bold green]Board size: {boardSize} x {boardSize}[/]");
+
 Console.WriteLine();
 
 BoardRenderer renderer = new BoardRenderer();
 renderer.RenderBoard(boardSize);
-
-
