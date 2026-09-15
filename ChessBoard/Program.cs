@@ -1,4 +1,5 @@
-﻿int boardSize;
+﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
+int boardSize;
 
 while (true)
 {
@@ -18,22 +19,7 @@ while (true)
 Console.WriteLine($"Board size: {boardSize} x {boardSize}");
 Console.WriteLine();
 
-for (int row = 0; row < boardSize; row++)
-{
-    for (int column = 0; column < boardSize; column++)
-    {
-        if ((row + column) % 2 == 0)
-        {
-            Console.BackgroundColor = ConsoleColor.Black;
-        }
-        else
-        {
-            Console.BackgroundColor = ConsoleColor.White;
-        }
-        Console.Write("  ");    
-    }
+BoardRenderer renderer = new BoardRenderer();
+renderer.RenderBoard(boardSize);
 
-    Console.WriteLine();
-    Console.ResetColor();
-}
 
