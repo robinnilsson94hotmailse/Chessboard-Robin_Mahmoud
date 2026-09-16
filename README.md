@@ -110,7 +110,16 @@ Vi arbetar med:
 
 ### Merge conflict
 
-Den här delen uppdateras efter att vi har skapat och löst vår merge conflict.
+Vi båda ändrade i README-filen. Mahmoud gjorde sedan git add, git commit och git push, medan jag(robin) gjorde git add och git commit.
+Sedan gjorde jag git pull, vilket skapade en merge conflict. Jag öppnade README-filen och kollade konflikten och såg både det jag hade ändrat och det Mahmoud hade ändrat.
+Vid det här laget såg Mahmoud inte båda ändringarna.
+Vi hade missuppfattat varandra, så jag ändrade tillbaka till vad jag trodde att det skulle stå. Sedan körde jag:
+git add README.md
+ git commit -m "Lös merge conflict"
+ git push
+Efter det körde Mahmoud git pull och fick det jag hade ändrat tillbaka till, vilket visade sig vara fel. Han ändrade därför README-filen igen och sedan gjorde jag en git pull för att få hans senaste ändring.
+Det vi lärde oss: Vi lärde oss hur en merge conflict kan uppstå när två personer ändrar samma fil och hur man kan lösa konflikten manuellt och sedan synkronisera ändringarna med Git.
+
 
 ## Utvecklare
 
