@@ -8,7 +8,8 @@ Användaren väljer brädets storlek mellan 3 och 50.
 
 För att köra projektet behöver du:
 
-dotnet 10.1
+.NET 10.1
+GIT
 
 Kontrollera .NET-versionen:
 
