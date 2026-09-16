@@ -8,7 +8,7 @@ Användaren väljer brädets storlek mellan 3 och 50.
 
 För att köra projektet behöver du:
 
-- .NET 10 SDK
+- tender
 - Git
 
 Kontrollera .NET-versionen:
