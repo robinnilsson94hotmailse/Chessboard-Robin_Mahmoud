@@ -95,7 +95,7 @@ Vi använder nästlade `for`-loopar eftersom schackbrädet består av rader och 
 
 Uttrycket `(row + column) % 2` används för att växla mellan svarta och vita rutor.
 
-Vi använde "const string chessPawn = "\u265F\uFE0F";" för att lägga till schalpjäser runt "ChessBoard Generator ".
+Vi använde `const string chessPawn = "\u265F\uFE0F";` för att lägga till schalpjäser runt "ChessBoard Generator ".
 
 Koden är uppdelad i `Program.cs` och `BoardRenderer.cs` för att göra programmet lättare att läsa, testa och förklara.
 
