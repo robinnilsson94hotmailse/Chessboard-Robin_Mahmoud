@@ -2,7 +2,10 @@
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-AnsiConsole.MarkupLine("[bold blue]ChessBoard Generator[/]");
+const string chessPawn = "\u265F\uFE0F";
+
+AnsiConsole.MarkupLine(
+    $"[bold blue]{chessPawn} ChessBoard Generator {chessPawn}[/]");
 
 bool runAgain = true;
 
@@ -41,7 +44,8 @@ while (runAgain)
     Console.WriteLine();
 
     AnsiConsole.MarkupLine("[bold yellow]Board information:[/]");
-    AnsiConsole.MarkupLine($"Total squares: [bold]{totalSquares}[/]");
+    AnsiConsole.MarkupLine(
+        $"Total squares: [bold]{totalSquares}[/]");
     AnsiConsole.MarkupLine(
         $"Dark squares: [bold grey]{darkSquares}[/]");
     AnsiConsole.MarkupLine(
