@@ -2,7 +2,7 @@
 # Chessboard – Robin & Mahmoud
 
 Ett C#-program som skapar ett schackbräde i konsolen.  
-Användaren väljer brädets storlek mellan 3 och 50.
+Användaren väljer brädets storlek mellan 3 och 50 och får sedan en fråga om användaren vill skapa ett till schackbräde.
 
 ## Krav
 
