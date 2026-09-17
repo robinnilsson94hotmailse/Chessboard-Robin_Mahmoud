@@ -1,5 +1,8 @@
 ﻿internal class BoardRenderer
 {
+    private const string WhiteSquare = "\u25A1"; // □
+    private const string BlackSquare = "\u25A0"; // ■
+
     public void RenderBoard(int size)
     {
         for (int row = 0; row < size; row++)
@@ -8,7 +11,9 @@
             {
                 bool isDark = IsDarkSquare(row, column);
 
-                Console.Write(isDark ? "◼︎" : "◻︎");
+                Console.Write(isDark
+                    ? BlackSquare + " "
+                    : WhiteSquare + " ");
             }
 
             Console.WriteLine();

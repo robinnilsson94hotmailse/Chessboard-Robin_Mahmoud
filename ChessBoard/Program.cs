@@ -1,4 +1,5 @@
-﻿using Spectre.Console;
+﻿
+using Spectre.Console;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
